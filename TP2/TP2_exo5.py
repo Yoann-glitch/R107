@@ -1,6 +1,6 @@
 while True:
 
-    x = int(input("Entre un nombre: "))
+    x = int(input("Entrez un nombre: "))
 
     if (x>0) and (x%2==0):
         print("Le nombre est positif et pair")
