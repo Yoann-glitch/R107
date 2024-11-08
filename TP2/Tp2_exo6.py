@@ -3,6 +3,6 @@ import random
 x = random.randint(0,100)
 
 if x < 50:
-    print("pile")
+    print("C'est pile")
 else:
-    print("face")
+    print("C'est face")
