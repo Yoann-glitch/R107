@@ -9,7 +9,6 @@ def aide():
 def affiche(dossier):
     """Affiche le contenu du dossier passé en argument."""
     try:
-        # Liste les fichiers et dossiers dans le dossier
         contenu = os.listdir(dossier)
         print(f"Contenu du dossier '{dossier}' :")
         for item in contenu:
@@ -18,7 +17,6 @@ def affiche(dossier):
         print(f"Erreur lors de l'accès au dossier : {e}")
 
 def main():
-    # Vérifier le nombre d'arguments
     if len(sys.argv) != 2:
         print("Erreur : Nombre d'arguments incorrect.")
         aide()
@@ -36,7 +34,6 @@ def main():
         aide()
         return
 
-    # Appeler la fonction affiche pour afficher le contenu du dossier
     affiche(chemin_dossier)
 
 if __name__ == "__main__":
